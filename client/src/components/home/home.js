@@ -44,9 +44,10 @@ function Home() {
                         </li>
                     </ul>
                 </div>
+                <div className="inspiration"><span>inspiration :</span> <a href="http://www.impossible-bureau.com/" target="_blank" rel="noreferrer">Impossible Bureau</a></div>
             </nav>
         </>
     );
 }
-  
+
 export default Home;

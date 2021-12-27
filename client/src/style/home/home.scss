@@ -1,3 +1,6 @@
+/****************************************************************
+*************************• MODE DESKTOP •************************
+****************************************************************/
 @media only screen and (min-width: 1024px) {
     nav{
         height: 100%;
@@ -40,8 +43,8 @@
     }
     .listNav > ul > li:nth-child(3):hover{
         cursor: pointer;
-        background-color: #0eed85;
-        border-bottom: 0.3rem solid #0eed85;
+        background-color: #0e49ed;
+        border-bottom: 0.3rem solid #0e49ed;
         transition: all 0.8s;
     }
     .listNav > ul > li:nth-child(4):hover{
@@ -89,6 +92,194 @@
         transition: all 0.8s;
     }
     .listNav > ul > li:hover > .contentListNav > span{
+        opacity: 1;
+        transition: all 0.8s;
+    }
+}
+
+/****************************************************************
+************************• MODE TABLETTE •************************
+****************************************************************/
+@media only screen and (min-width: 600px) and (max-width: 1024px){
+    nav{
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+    .listNav{
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+    .listNav > ul{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .listNav > ul > li{
+        height: 25%;
+        width: 100%;
+        float: left;
+        position: relative;
+        backface-visibility: hidden;
+        background-color: #000222;
+        color: #ffffff;
+        transition: all 0.8s;
+    }
+    .listNav > ul > li:nth-child(1):hover, li:nth-child(1):active{
+        cursor: pointer;
+        background-color: #ed0e6b;
+        transition: all 0.8s;
+    }
+    .listNav > ul > li:nth-child(2):hover, li:nth-child(2):active{
+        cursor: pointer;
+        background-color: #edc40e;
+        transition: all 0.8s;
+    }
+    .listNav > ul > li:nth-child(3):hover, li:nth-child(3):active{
+        cursor: pointer;
+        background-color: #0e49ed;
+        transition: all 0.8s;
+    }
+    .listNav > ul > li:nth-child(4):hover, li:nth-child(4):active{
+        cursor: pointer;
+        background-color: #ed0e6b;
+        transition: all 0.8s;
+    }
+    .listNav > ul > li > .contentListNav{
+        height: 100%;
+        width: 100%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+    }
+    .listNav > ul > li > .contentListNav > .separatorContent{
+        height: 0.1rem;
+        width: 25%;
+        margin: 1rem 0;
+        opacity: 0.3;
+        background-color: #ffffff;
+    }
+    .listNav > ul > li > .contentListNav > .titleContent{
+        height: auto;
+        width: 100%;
+        font-size: 2.6rem;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        transition: all 0.8s;
+    }
+    .listNav > ul > li > .contentListNav > .underTitleContent{
+        height: auto;
+        width: 100%;
+        opacity: 0.5;
+        font-size: 1.3rem;
+        text-align: center;
+        transition: all 0.8s;
+    }
+    .listNav > ul > li:hover, li:active > .contentListNav > .separatorContent{
+        opacity: 1;
+        transition: all 0.8s;
+    }
+    .listNav > ul > li:hover, li:active > .contentListNav > span{
+        opacity: 1;
+        transition: all 0.8s;
+    }
+}
+
+/****************************************************************
+**************************• MODE PHONE •*************************
+****************************************************************/
+@media only screen and (max-width: 600px) {
+    nav{
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+    .listNav{
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+    .listNav > ul{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .listNav > ul > li{
+        height: 25%;
+        width: 100%;
+        float: left;
+        position: relative;
+        backface-visibility: hidden;
+        background-color: #000222;
+        color: #ffffff;
+        transition: all 0.8s;
+    }
+    .listNav > ul > li:nth-child(1):hover, li:nth-child(1):active{
+        cursor: pointer;
+        background-color: #ed0e6b;
+        transition: all 0.8s;
+    }
+    .listNav > ul > li:nth-child(2):hover, li:nth-child(2):active{
+        cursor: pointer;
+        background-color: #edc40e;
+        transition: all 0.8s;
+    }
+    .listNav > ul > li:nth-child(3):hover, li:nth-child(3):active{
+        cursor: pointer;
+        background-color: #0e49ed;
+        transition: all 0.8s;
+    }
+    .listNav > ul > li:nth-child(4):hover, li:nth-child(4):active{
+        cursor: pointer;
+        background-color: #ed0e6b;
+        transition: all 0.8s;
+    }
+    .listNav > ul > li > .contentListNav{
+        height: 100%;
+        width: 100%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+    }
+    .listNav > ul > li > .contentListNav > .separatorContent{
+        display: none;
+    }
+    .listNav > ul > li > .contentListNav > .titleContent{
+        height: auto;
+        width: 100%;
+        font-size: 2.6rem;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        transition: all 0.8s;
+    }
+    .listNav > ul > li > .contentListNav > .underTitleContent{
+        height: auto;
+        width: 100%;
+        opacity: 0.5;
+        font-size: 1.3rem;
+        text-align: center;
+        transition: all 0.8s;
+    }
+    .listNav > ul > li:hover, li:active > .contentListNav > .separatorContent{
+        opacity: 1;
+        transition: all 0.8s;
+    }
+    .listNav > ul > li:hover, li:active > .contentListNav > span{
         opacity: 1;
         transition: all 0.8s;
     }
