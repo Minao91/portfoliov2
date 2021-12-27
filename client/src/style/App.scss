@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 
-*, *::before, *::after {
+*, *::before, *::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,13 +8,19 @@
 a{
     text-decoration: none;
 }
+li{
+    display: list-item;
+    list-style: none;
+    list-style-image: none;
+    text-align: -webkit-match-parent;
+}
 
 @media only screen and (min-width: 1024px) {
-    body{
+    html, body{
         height: 100%;
         width: 100%;
-        background-color: red;
-        color: #616161;
+        background-color: #F1F1F1F1;
+        color: #505050;
         font-family: 'Titillium Web';
         font-size: 1rem;
         overflow-x: hidden;
@@ -33,6 +39,3 @@ a{
         background-color: pink;
     }
 }
-
-// Desktop SCSS
-//@import "./head/navbar.scss";
